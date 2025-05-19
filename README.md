@@ -1,40 +1,157 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🎬 Movie Library UI
 
-## Getting Started
+This project is a fully responsive movie showcase website built using **Next.js** and **Tailwind CSS**, inspired by the UI test requirements from eBEYONDS.
 
-First, run the development server:
+It features:
+- A modern glass/dark-themed UI
+- Live movie search (via TVMaze API)
+- Collect your favorites into a custom grid
+- Full contact form with validation
+- Embedded Google Map
+- Mobile hamburger menu with slide animation
+
+---
+
+## 🚀 Tech Stack
+
+- **Frontend**: [Next.js](https://nextjs.org/) + [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
+- **API**: [TVMaze API](https://www.tvmaze.com/api)
+- **Maps**: Google Maps Embed API
+
+---
+
+## 📂 Folder Structure
+
+```
+
+movie-library-ui/
+├── public/
+│   ├── assets/
+│   │   ├── Logos/
+│   │   ├── Videos/
+│   │   └── Images/
+├── src/
+│   ├── components/
+│   │   ├── Header.tsx
+│   │   ├── HamburgerMenu.tsx
+│   │   ├── MainVisual.tsx
+│   │   ├── Introduction.tsx
+│   │   ├── SearchSection.tsx
+│   │   ├── ContactForm.tsx
+│   │   ├── Footer.tsx
+│   ├── pages/
+│   │   └── index.tsx
+│   ├── styles/
+│   │   └── globals.css
+
+````
+
+---
+
+## 🧰 Getting Started
+
+### 1. Clone the Repo
+```bash
+git clone https://github.com/Nuraj250/movie-library-ui.git
+cd movie-library-ui
+````
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 🔥 Features Implemented
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+### ✅ Hero Section
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* Fullscreen background **video**
+* Title + overlay text
+* Responsive scaling
 
-## Learn More
+### ✅ Header
 
-To learn more about Next.js, take a look at the following resources:
+* Logo (SVG)
+* Responsive nav links
+* Hamburger menu with **slide-in animation** and scroll lock
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+### ✅ Introduction Section
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* Large centered heading
+* Matches PDF layout with padding + spacing
 
-## Deploy on Vercel
+### ✅ Movie Search Section
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Live search using **TVMaze API**
+* Styled **search bar with icon**
+* Random movies shown by default
+* **Add/remove from grid**
+* LocalStorage persistence
+* Dark card layout + shadows
+* ❌ buttons on every card
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+### ✅ Contact Us Section
+
+* Two-column layout (form + map)
+* Required field validation
+* Styled checkbox for agreement
+* **Submit button** styled as per PDF (`#d99900`)
+* **Google Map** embed (Amadeus HQ)
+
+### ✅ Footer
+
+* Company address left-aligned
+* Social icons right-aligned
+* Bottom copyright
+* Credits with underline links
+
+---
+
+## 📦 Dependencies
+
+```bash
+npm install react-icons
+```
+
+---
+
+## 🌍 Deployment
+
+You can deploy to Vercel instantly:
+
+```bash
+npx vercel
+```
+
+Or export static files:
+
+```bash
+npm run build
+```
+
+---
+
+## 📸 Screenshots
+
+<p align="center">
+  <img src="public/assets/Images/preview-desktop.jpg" width="80%" />
+</p>
+
+---
+
+## 📝 License
+
+This project is built as a frontend test UI. No commercial license is attached. You may reuse the layout for learning or personal projects.

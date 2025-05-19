@@ -7,7 +7,7 @@ const HamburgerMenu = ({
   links: string[]
   onClose: () => void
 }) => {
-  // 🚫 Lock scroll when menu is open
+  // Lock scroll when menu is open
   useEffect(() => {
     document.body.style.overflow = 'hidden'
     return () => {
